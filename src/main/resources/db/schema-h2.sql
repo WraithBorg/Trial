@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS tr_exam;
+CREATE TABLE tr_exam
+(
+	id BIGINT(20) NOT NULL AUTO_INCREMENT,
+    question VARCHAR(255) NULL DEFAULT '' ,
+    answer VARCHAR(255) NULL DEFAULT ''  ,
+	PRIMARY KEY (id)
+);
