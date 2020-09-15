@@ -23,9 +23,8 @@
         <a class="btn btn-primary " th:href="@{/Next}" role="button">Next</a>
         <a class="btn btn-warning " th:href="@{/Answer/{type}(type=${ID})}" role="button">Answer</a>
     </div>
-    <p>ID: <span th:text="${ID}"></span>.</p>
-    <p>Question: <span th:text="${Question}"></span>.</p>
-    <p>Answer: <span th:text="${Answer}"></span>.</p>
+    <p><b>Question:</b> <span th:text="${Question}"></span>.</p>
+    <p><b>Answer: </b><span th:utext="${Answer}"></span>.</p>
 
     <div class="alert alert-danger" role="alert"><span th:text="${WarnInfo}"></span></div>
 </div>
